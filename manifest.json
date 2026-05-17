@@ -1,0 +1,17 @@
+{
+  "name": "送貨員小幫手",
+  "short_name": "送貨員",
+  "description": "掃條碼，包裹送達！",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FFF3E0",
+  "theme_color": "#E85D00",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
