@@ -364,7 +364,16 @@
   }
 
   function showResult(code) {
-    document.getElementById('resultTitle').textContent = '包裹 ' + code + ' 已送達 🎉';
+    var el = document.getElementById('resultTitle');
+    el.innerHTML = '';
+    el.appendChild(document.createTextNode('包裹'));
+    el.appendChild(document.createElement('br'));
+    var span = document.createElement('span');
+    span.style.whiteSpace = 'nowrap';
+    span.textContent = code;
+    el.appendChild(span);
+    el.appendChild(document.createElement('br'));
+    el.appendChild(document.createTextNode('已送達 🎉'));
     document.getElementById('resultCard').classList.add('active');
   }
 
