@@ -1,4 +1,4 @@
-var CACHE = 'beep-beep-v1';
+var CACHE = 'beep-beep-v2';
 var ASSETS = ['./', './index.html', './manifest.json', './icon.svg'];
 
 self.addEventListener('install', function (e) {
