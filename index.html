@@ -168,22 +168,8 @@
       color: #69F0AE;
     }
 
-    .result-label {
-      font-size: 15px;
-      color: #777;
-      letter-spacing: 0.1em;
-    }
-
-    #resultCode {
-      font-family: "SF Mono", "Fira Code", "Courier New", monospace;
-      font-size: 22px;
-      color: #E0E0E0;
-      background: #1A1A1A;
-      border: 1px solid #333;
-      border-radius: 12px;
-      padding: 16px 24px;
+    .result-title {
       word-break: break-all;
-      max-width: 100%;
     }
 
     #btnContinue {
@@ -245,9 +231,7 @@
 <!-- 結果卡片 -->
 <div id="resultCard">
   <div class="result-emoji">📦</div>
-  <div class="result-title">包裹送達！🎉</div>
-  <div class="result-label">條碼編號</div>
-  <div id="resultCode"></div>
+  <div class="result-title" id="resultTitle"></div>
   <button id="btnContinue">繼續掃下一個 📦</button>
   <button id="btnHome">回首頁</button>
 </div>
@@ -380,7 +364,7 @@
   }
 
   function showResult(code) {
-    document.getElementById('resultCode').textContent = code;
+    document.getElementById('resultTitle').textContent = '包裹 ' + code + ' 已送達 🎉';
     document.getElementById('resultCard').classList.add('active');
   }
 
